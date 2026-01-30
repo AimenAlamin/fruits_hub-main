@@ -5,13 +5,10 @@ import 'package:flutter_paypal_payment/flutter_paypal_payment.dart';
 import 'package:fruits_hub/core/helper_functions/build_error_bar.dart';
 import 'package:fruits_hub/core/utils/app_keys.dart';
 import 'package:fruits_hub/core/widgets/custom_button.dart';
-import 'package:fruits_hub/core/widgets/fruit_item.dart';
 import 'package:fruits_hub/features/checkout/domain/entites/order_entity.dart';
 import 'package:fruits_hub/features/checkout/domain/entites/paypal_payment_entity/paypal_payment_entity.dart';
 import 'package:fruits_hub/features/checkout/presentation/manger/add_order_cubit/add_order_cubit.dart';
-import 'package:fruits_hub/features/checkout/presentation/views/widgets/active_step_item.dart';
 import 'package:fruits_hub/features/checkout/presentation/views/widgets/checkout_steps.dart';
-import 'package:fruits_hub/features/checkout/presentation/views/widgets/in_active_step_item.dart';
 import 'package:provider/provider.dart';
 
 import 'checkout_steps_page_view.dart';

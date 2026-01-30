@@ -1,18 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:fruits_hub/core/helper_functions/build_error_bar.dart';
-import 'package:fruits_hub/features/checkout/presentation/views/widgets/active_step_item.dart';
-import 'package:fruits_hub/features/checkout/presentation/views/widgets/in_active_step_item.dart';
 import 'package:fruits_hub/features/checkout/presentation/views/widgets/step_item.dart';
-import 'package:fruits_hub/features/home/presentation/views/widgets/active_item.dart';
-import 'package:provider/provider.dart';
-
-import '../../../domain/entites/order_entity.dart';
 
 class CheckoutSteps extends StatelessWidget {
   const CheckoutSteps(
       {super.key,
       required this.currentPageIndex,
-      required this.pageController, required this.onTap});
+      required this.pageController,
+      required this.onTap});
 
   final int currentPageIndex;
   final PageController pageController;

@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:fruits_hub/core/entities/product_entity.dart';
 
 import '../helper_functions/get_avg_rating.dart';

@@ -31,21 +31,23 @@ class SigninCubit extends Cubit<SigninState> {
     );
   }
 
-  Future<void> signinWithFacebook() async {
-    emit(SigninLoading());
-    var result = await authRepo.signinWithFacebook();
-    result.fold(
-      (failure) => emit(SigninFailure(message: failure.message)),
-      (userEntity) => emit(SigninSuccess(userEntity: userEntity)),
-    );
-  }
+  // Disabled - Facebook Sign-In removed
+  // Future<void> signinWithFacebook() async {
+  //   emit(SigninLoading());
+  //   var result = await authRepo.signinWithFacebook();
+  //   result.fold(
+  //     (failure) => emit(SigninFailure(message: failure.message)),
+  //     (userEntity) => emit(SigninSuccess(userEntity: userEntity)),
+  //   );
+  // }
 
-  Future<void> signinWithApple() async {
-    emit(SigninLoading());
-    var result = await authRepo.signinWithApple();
-    result.fold(
-      (failure) => emit(SigninFailure(message: failure.message)),
-      (userEntity) => emit(SigninSuccess(userEntity: userEntity)),
-    );
-  }
+  // Disabled - Apple Sign-In removed
+  // Future<void> signinWithApple() async {
+  //   emit(SigninLoading());
+  //   var result = await authRepo.signinWithApple();
+  //   result.fold(
+  //     (failure) => emit(SigninFailure(message: failure.message)),
+  //     (userEntity) => emit(SigninSuccess(userEntity: userEntity)),
+  //   );
+  // }
 }

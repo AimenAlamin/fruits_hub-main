@@ -113,7 +113,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                       children: [
                         SocialLoginButton(
                           onPressed: () {
-                            context.read<SigninCubit>().signinWithApple();
+                            // Apple Sign-In disabled - UI only
                           },
                           image: Assets.imagesApplIcon,
                           title: 'تسجيل بواسطة أبل',
@@ -126,7 +126,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                   : const SizedBox(),
               SocialLoginButton(
                 onPressed: () {
-                  context.read<SigninCubit>().signinWithFacebook();
+                  // Facebook Sign-In disabled - UI only
                 },
                 image: Assets.imagesFacebookIcon,
                 title: 'تسجيل بواسطة فيسبوك',

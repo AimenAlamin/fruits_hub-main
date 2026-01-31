@@ -57,7 +57,7 @@ class FruitItem extends StatelessWidget {
                     TextSpan(
                       children: [
                         TextSpan(
-                          text: '${productEntity.price}جنية ',
+                          text: '${productEntity.price}ريال ',
                           style: TextStyles.bold13.copyWith(
                             color: AppColors.secondaryColor,
                           ),

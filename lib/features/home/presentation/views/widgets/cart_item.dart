@@ -79,7 +79,7 @@ class CartItem extends StatelessWidget {
                         ),
                         const Spacer(),
                         Text(
-                          '${carItemEntity.calculateTotalPrice()} جنيه ',
+                          '${carItemEntity.calculateTotalPrice()} ريال ',
                           style: TextStyles.bold16
                               .copyWith(color: AppColors.secondaryColor),
                         )
